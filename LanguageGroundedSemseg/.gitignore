@@ -1,0 +1,17 @@
+# Ignore the dataset folder
+# IMPORTANT: make sure that your dataset is stored in a
+# folder with the same name as the one specified below!
+
+.idea
+**/__pycache__/
+**/.pyc
+output/
+outputs/
+wandb/
+notebooks/
+output/*.csv
+**.DS_Store
+*.DS_Store
+**/__pycache__/
+*.zip
+*.ckpt
