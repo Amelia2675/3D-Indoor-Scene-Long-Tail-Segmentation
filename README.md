@@ -1,7 +1,6 @@
 # 3D-Indoor-Scene-Long-Tail-Segmentation
 Language-grounded Indoor 3D semantic segmentation in the wild
 
-## DLCV Final Project ( 3D ScanNet200 long-tail segmentation )
 
 ## 1. Language ground 3D pretraining
 Pretrain the 3D feature extractor by  contrastive loss between text anchors and 3D features. (set lambda = 1)
@@ -12,7 +11,7 @@ Training objective:
 Finetune the 3D semantic segmentation model with category-balanced focal loss and instance sampling.
 
 ## Category-balanced focal loss
-Add a modulating factor for a cross entropy loss 
+Add a modulating factor for a cross entropy loss /n
 <img width="338" alt="image" src="https://user-images.githubusercontent.com/109503040/225255657-26700bc4-e849-4884-a141-f9026819373b.png">
 where pt is the prediction probability for respective target label and gamma is a constant to control the factor (set gamma to 2) 
 
