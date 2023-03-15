@@ -1,14 +1,14 @@
 # 3D-Indoor-Scene-Long-Tail-Segmentation
 Language-grounded Indoor 3D semantic segmentation in the wild
 
-# DLCV Final Project ( 3D ScanNet200 long-tail segmentation )
+## DLCV Final Project ( 3D ScanNet200 long-tail segmentation )
 
-1. Language ground 3D pretraining
+## 1. Language ground 3D pretraining
 Pretrain the 3D feature extractor by  contrastive loss between text anchors and 3D features. (set lambda = 1)
 Training objective:
 <img width="387" alt="image" src="https://user-images.githubusercontent.com/109503040/225255443-6eadcdc3-3b0b-475e-929b-a2d8b894069d.png">
 
-2. 3D Semantic Segmentation Fine-tuning
+## 2. 3D Semantic Segmentation Fine-tuning
 Finetune the 3D semantic segmentation model with category-balanced focal loss and instance sampling.
 
 ## Category-balanced focal loss
@@ -110,23 +110,3 @@ source training_scripts/fine_tune_classifier.sh <BATCH_SIZE> <LOSS_TYPE> <SAMPLE
 # e.g. source training_scripts/fine_tune_classifier.sh 2 focal True baseline-finetune
 ```
 ``<SAMPLE_TAIL>`` can be ``True`` or ``False``
-
-# Usage
-To start working on this final project, you should clone this repository into your local machine by the following command:
-
-    git clone https://github.com/ntudlcv/DLCV-Fall-2022-Final-2-<team name>.git
-  
-Note that you should replace `<team_name>` with your own team name.
-
-For more details, please click [this link](https://docs.google.com/presentation/d/1Y-gwBmucYgbWLLk-u6coHi7LybFLXgA9gV8KiOiKShI/edit?usp=sharing) to view the slides of Final Project - ScanNet200. **Note that video and introduction pdf files for final project can be accessed in your NTU COOL.**
-
-# Submission Rules
-### Deadline
-111/12/29 (Thur.) 23:59 (GMT+8)
-    
-# Q&A
-If you have any problems related to Final Project, you may
-- Use TA hours
-- Contact TAs by e-mail ([ntudlcv@gmail.com](mailto:ntudlcv@gmail.com))
-- Post your question under Final Project FAQ section in NTU Cool Discussion
-
