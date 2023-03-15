@@ -17,14 +17,14 @@ Add a modulating factor for a cross entropy loss
 
 where pt is the prediction probability for respective target label and gamma is a constant to control the factor (set gamma to 2) 
 
-## Instance Sampling
+### Instance Sampling
 Place instances from less-seen categories (tail)  and break overly specific dependencies for recognition. 
 We tried instance sampling in fine-tuning stage but the result is much worse than another settings, so we decided to add it in stage 3 training to see if it would work.
 
 <img width="525" alt="image" src="https://user-images.githubusercontent.com/109503040/225255826-bee6ff09-c954-4552-8414-110846a35eb4.png">
 
-## Mixing technique
-Create new training samples by combining two augmented scene. Object instances are implicitly placed into novel out-of-context environments. Thus, the semantics can be inferred from local structure.
+### Mixing technique
+Create new training samples by combining two augmented scene. Object instances are implicitly placed into novel out-of-context environments. Thus, the semantics can be inferred from local structure.
 We tried this method but didn't get improvement on the results.
 
 ## Experiments
