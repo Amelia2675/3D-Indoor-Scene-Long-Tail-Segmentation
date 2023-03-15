@@ -23,6 +23,10 @@ We tried instance sampling in fine-tuning stage but the result is much worse tha
 
 <img width="525" alt="image" src="https://user-images.githubusercontent.com/109503040/225255826-bee6ff09-c954-4552-8414-110846a35eb4.png">
 
+## Mixing technique
+Create new training samples by combining two augmented scene. Object instances are implicitly placed into novel out-of-context environments. Thus, the semantics can be inferred from local structure.
+We tried this method but didn't get improvement on the results.
+
 ## Experiments
 We trained the model with different settings for 200 epochs each stage. (ce stands for cross-entropy loss and focal stands for mentioned category-balanced focal loss. While ts means adding instance sampling for tail categories in data augmentation.)
 
