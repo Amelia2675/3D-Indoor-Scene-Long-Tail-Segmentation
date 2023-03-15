@@ -10,7 +10,7 @@ Training objective:
 ## 2. 3D Semantic Segmentation Fine-tuning
 Finetune the 3D semantic segmentation model with category-balanced focal loss and instance sampling.
 
-## Category-balanced focal loss
+### Category-balanced focal loss
 Add a modulating factor for a cross entropy loss
 
 <img width="338" alt="image" src="https://user-images.githubusercontent.com/109503040/225255657-26700bc4-e849-4884-a141-f9026819373b.png">
