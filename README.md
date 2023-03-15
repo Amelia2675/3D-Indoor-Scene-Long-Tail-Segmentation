@@ -5,6 +5,7 @@ Language-grounded Indoor 3D semantic segmentation in the wild
 ## 1. Language ground 3D pretraining
 Pretrain the 3D feature extractor by  contrastive loss between text anchors and 3D features. (set lambda = 1)
 Training objective:
+
 <img width="387" alt="image" src="https://user-images.githubusercontent.com/109503040/225255443-6eadcdc3-3b0b-475e-929b-a2d8b894069d.png">
 
 ## 2. 3D Semantic Segmentation Fine-tuning
