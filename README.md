@@ -1,5 +1,5 @@
 # 3D-Indoor-Scene-Long-Tail-Segmentation
-Language-grounded Indoor 3D semantic segmentation in the wild
+Inspired by Language-grounded Indoor 3D semantic segmentation in the wild
 
 
 ## 1. Language ground 3D pretraining
