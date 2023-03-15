@@ -35,7 +35,7 @@ We trained the model with different settings for 200 epochs each stage. (ce stan
 
 3.Tail sampling cannot improve the performance according to our experiments.
 
-# How to run your code?
+# How to run this code?
 
 ## Prerequisite
 
