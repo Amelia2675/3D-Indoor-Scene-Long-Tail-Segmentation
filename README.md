@@ -11,22 +11,28 @@ Training objective:
 Finetune the 3D semantic segmentation model with category-balanced focal loss and instance sampling.
 
 ## Category-balanced focal loss
-Add a modulating factor for a cross entropy loss /n
+Add a modulating factor for a cross entropy loss
+
 <img width="338" alt="image" src="https://user-images.githubusercontent.com/109503040/225255657-26700bc4-e849-4884-a141-f9026819373b.png">
+
 where pt is the prediction probability for respective target label and gamma is a constant to control the factor (set gamma to 2) 
 
 ## Instance Sampling
 Place instances from less-seen categories (tail)  and break overly specific dependencies for recognition. 
 We tried instance sampling in fine-tuning stage but the result is much worse than another settings, so we decided to add it in stage 3 training to see if it would work.
+
 <img width="525" alt="image" src="https://user-images.githubusercontent.com/109503040/225255826-bee6ff09-c954-4552-8414-110846a35eb4.png">
 
 ## Experiments
 We trained the model with different settings for 200 epochs each stage. (ce stands for cross-entropy loss and focal stands for mentioned category-balanced focal loss. While ts means adding instance sampling for tail categories in data augmentation.)
+
 <img width="570" alt="image" src="https://user-images.githubusercontent.com/109503040/225256142-d1a790f4-5bc1-404b-b6a3-605a4c1865f8.png">
 
 ## Results
 1.Focal loss can improve the IoU of tail and common categories significantly, comparing to cross-entropy loss.
+
 2.Pretrain the 3D feature extractor yields better result.
+
 3.Tail sampling cannot improve the performance according to our experiments.
 
 # How to run your code?
